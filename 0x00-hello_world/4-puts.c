@@ -1,13 +1,10 @@
 #include <stdio.h>
 
 /**
- * Main - entry point
+  *main - Entry point
  *
- * mystring - stores string
+ * Return: Always 0 (Success)
  *
- * puts - prints  string to standard output
- *
- * return - returns  if successful.
  */
 
 int main(void)
