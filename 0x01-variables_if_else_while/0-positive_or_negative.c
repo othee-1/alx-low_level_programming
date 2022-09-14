@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Entry point
  *
  * Return: Always 0 (Success)
@@ -19,7 +18,7 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%d is positve\n", n );
+		printf("%d is positive\n", n);
 	}
 
 	if (n == 0)
