@@ -18,7 +18,7 @@ void print_diagonal(int num)
 		{
 			_putchar(32);
 
-			if (line2 == 1)
+			if (line2 == line)
 			{
 				_putchar(92);
 				_putchar('\n');
