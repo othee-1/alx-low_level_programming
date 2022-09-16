@@ -5,12 +5,10 @@
  * @num: number of times \ is printed
  * Description: Can only use _putchar to print
  */
-void print_diagonal(int num)
+void print_line(int num)
 {
 	int line, line2;
-
 	line = 1;
-
 	while (line <= num)
 	{
 		if (num <= 0)
@@ -19,18 +17,25 @@ void print_diagonal(int num)
 		}
 		else
 		{
+		
 			line2 = line;
-
 			while (line2 > 0)
 			{
 				putchar(' ');
-				line2--;
+				line2--;	
 			}
 			putchar('\\');
 			putchar('\n');
 		}
+		
 
 		line++;
 	}
 	putchar('\n');
+}
+
+int main(void)
+{
+	print_line(10);
+	return (0);
 }
