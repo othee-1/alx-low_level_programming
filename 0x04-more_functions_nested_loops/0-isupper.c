@@ -2,7 +2,7 @@
 
 /**
  * _isupper - function that checks for uppercase characters
- * 
+ * @c: number of type int
  * Return: 1 else 0
  */
 int _isupper(int c)
@@ -10,8 +10,9 @@ int _isupper(int c)
 	if (c > 64 && c < 91)
 	{
 		return (1);
-	} else
+	}
+	else
 	{
 		return (0);
-	}	
+	}
 }
