@@ -9,28 +9,23 @@ void print_diagonal(int num)
 {
 	int line, line2;
 
-	line = 1;
+	line = 0;
+	line2 = 0;
 
-	while (line <= num)
+	while (line < num)
 	{
-		if (num <= 0)
+		while (line2 < line)
 		{
-			_putchar('\n');
-		}
-		else
-		{
-			line2 = line;
+			_putchar(32);
 
-			while (line2 > 0)
+			if (line2 == 1)
 			{
-				_putchar(' ');
-				line2--;
+				_putchar(92);
+				_putchar('\n');
 			}
-			_putchar('\\');
-			_putchar('\n');
+			line2++;
 		}
-
 		line++;
 	}
-	 _putchar('\n');
+
 }
