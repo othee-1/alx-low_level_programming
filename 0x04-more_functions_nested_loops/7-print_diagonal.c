@@ -1,36 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_line - draw a diagona line
+ * print_diagonal - draw a diagona line
  * @num: number of times \ is printed
  * Description: Can only use _putchar to print
  */
-void print_line(int num)
+void print_diagonal(int num)
 {
-	int line, line2;
+int i;
 
-	line = 1;
-
-	while (line <= num)
+	for (i = 0; i < num; i++)
 	{
-		if (num <= 0)
-		{
-			putchar('\n');
-		}
-		else
-		{
-			line2 = line;
+		int a;
 
-			while (line2 > 0)
-			{
-				putchar(' ');
-				line2--;
-			}
-			putchar('\\');
-			putchar('\n');
+		for (a = 0; a < i; a++)
+			_putchar(32);
+		if (a == i)
+		{
+			_putchar(92);
+			_putchar('\n');
 		}
-
-		line++;
 	}
-	putchar('\n');
 }
